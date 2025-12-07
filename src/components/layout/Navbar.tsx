@@ -8,6 +8,7 @@ import { TopContactBar } from "./TopContactBar";
 import logo from "../../assets/logo.jpg"
 
 const programs = [
+    { name: "All Programs", href: "/programs" },
   { name: "Child Protection", href: "/programs/child-protection" },
   { name: "Education", href: "/programs/education" },
   { name: "WASH", href: "/programs/wash" },

@@ -11,7 +11,7 @@ const governanceStructure = [
     level: 'Board of Directors',
     description: 'Provides strategic oversight, policy guidance, and ensures organizational accountability. The board meets quarterly to review progress and set direction.',
     members: [
-      'Founder & Chairperson',
+      'Co-founder & Chairperson',
       'Co-founder & Advisor',
       'Secretary',
       'Treasurer',
@@ -23,13 +23,15 @@ const governanceStructure = [
     level: 'Management Staff',
     description: 'Implement our six core programs across different locations, working directly with communities and beneficiaries.',
     members: [
+      'Head of Programs',
       'Programs Manager',
       'Programs Coordinator',
       'HR Manager',
       'Finance Manager',
       'Logistics & Procurement Manager',
       'M&E Manager',
-      'Protection Manager',
+      'Partnerships and Meal Manager',
+      'Project Development Officer',
     ],
   },
   {
@@ -146,7 +148,7 @@ export default function OrganizationStructure() {
                   <div className="w-px h-8 bg-border" />
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {['Programs', 'HR & Admin', 'Finance', 'Logistics'].map((dept) => (
+                  {['Programs', 'HR', 'Admin & Finance', 'Logistics','M&E','Partnerships & Meal'].map((dept) => (
                     <div key={dept} className="px-4 py-3 bg-muted rounded-lg text-center font-medium text-foreground">
                       {dept}
                     </div>
