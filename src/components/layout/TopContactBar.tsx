@@ -8,14 +8,14 @@ export function TopContactBar() {
           {/* Contact Info */}
           <div className="flex flex-wrap items-center gap-4 md:gap-6">
             <a 
-              href="mailto:info@carssouthsudan.org" 
+              href="mailto:info@carsrelief.org" 
               className="flex items-center gap-2 hover:text-secondary transition-colors duration-200"
             >
               <Mail className="w-4 h-4" />
               <span className="hidden sm:inline">info@carsrelief.org </span>
             </a>
             <a 
-              href="tel:+211912345678" 
+              href="tel:+211 926 559 555" 
               className="flex items-center gap-2 hover:text-secondary transition-colors duration-200"
             >
               <Phone className="w-4 h-4" />
