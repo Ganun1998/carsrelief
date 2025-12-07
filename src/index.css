@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 20% 97%;
+    --foreground: 220 30% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 15%;
+
+    --primary: 210 70% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 85% 55%;
+    --secondary-foreground: 220 30% 15%;
+
+    --muted: 45 15% 92%;
+    --muted-foreground: 220 15% 45%;
+
+    --accent: 145 45% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 210 70% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for CARS */
+    --hope: 35 85% 55%;
+    --hope-light: 35 85% 75%;
+    --trust: 210 70% 35%;
+    --trust-light: 210 70% 55%;
+    --growth: 145 45% 40%;
+    --growth-light: 145 45% 60%;
+    --earth: 25 35% 35%;
+    --warm: 20 80% 50%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 70% 25%) 0%, hsl(210 70% 40%) 50%, hsl(35 85% 55%) 100%);
+    --gradient-hope: linear-gradient(135deg, hsl(35 85% 55%) 0%, hsl(35 85% 65%) 100%);
+    --gradient-trust: linear-gradient(135deg, hsl(210 70% 35%) 0%, hsl(210 70% 50%) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(45 20% 97%) 0%, hsl(35 30% 95%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsla(220 30% 15% / 0.7) 0%, hsla(220 30% 15% / 0.4) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsla(220 30% 15% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsla(220 30% 15% / 0.15);
+    --shadow-strong: 0 12px 40px -12px hsla(220 30% 15% / 0.2);
+    --shadow-glow: 0 0 40px hsla(35 85% 55% / 0.3);
+  }
+
+  .dark {
+    --background: 220 30% 10%;
+    --foreground: 45 20% 95%;
+
+    --card: 220 30% 14%;
+    --card-foreground: 45 20% 95%;
+
+    --popover: 220 30% 14%;
+    --popover-foreground: 45 20% 95%;
+
+    --primary: 35 85% 55%;
+    --primary-foreground: 220 30% 10%;
+
+    --secondary: 210 50% 30%;
+    --secondary-foreground: 45 20% 95%;
+
+    --muted: 220 25% 18%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 145 45% 45%;
+    --accent-foreground: 220 30% 10%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 25% 22%;
+    --input: 220 25% 22%;
+    --ring: 35 85% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-hero {
+    background-image: var(--gradient-hero);
+  }
+
+  .bg-gradient-hope {
+    background-image: var(--gradient-hope);
+  }
+
+  .bg-gradient-trust {
+    background-image: var(--gradient-trust);
+  }
+
+  .bg-gradient-warm {
+    background-image: var(--gradient-warm);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+}
