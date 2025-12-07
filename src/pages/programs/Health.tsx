@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowLeft } from 'lucide-react';
@@ -17,6 +18,11 @@ const keyActivities = [
 ];
 
 export default function Health() {
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     <Layout>
       {/* Hero Section */}

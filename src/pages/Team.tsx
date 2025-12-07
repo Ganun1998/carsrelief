@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Mail, Facebook, ArrowRight } from 'lucide-react';
@@ -153,6 +154,11 @@ const fielCoodinators = [
 
 
 export default function Team() {
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     <Layout>
       {/* Hero Section */}

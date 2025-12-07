@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle, CreditCard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -18,6 +18,11 @@ const whyDonate = [
 ];
 
 export default function Donate() {
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   const [selectedAmount, setSelectedAmount] = useState<number | null>(100);
   const [customAmount, setCustomAmount] = useState('');
   const [donationType, setDonationType] = useState<'one-time' | 'monthly'>('one-time');

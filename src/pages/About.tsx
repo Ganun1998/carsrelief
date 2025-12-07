@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Target, Eye } from "lucide-react";
@@ -16,6 +17,11 @@ const objectives = [
 ];
 
 export default function About() {
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     <Layout>
       {/* Hero Section */}

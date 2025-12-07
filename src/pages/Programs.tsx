@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Shield, BookOpen, Droplets, Apple, Heart, TrendingUp, ArrowRight } from 'lucide-react';
@@ -70,6 +71,11 @@ const programs = [
 ];
 
 export default function Programs() {
+
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     <Layout>
       {/* Hero Section */}
