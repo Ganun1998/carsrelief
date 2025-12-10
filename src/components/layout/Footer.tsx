@@ -111,13 +111,13 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="tel:+211925000000" className="text-primary-foreground/70 hover:text-secondary transition-colors duration-300">
+                <a href="tel:+211 926 559 555" className="text-primary-foreground/70 hover:text-secondary transition-colors duration-300">
                   +211 926 559 555<br/> +211 929 995 792
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-secondary flex-shrink-0" />
-                <a href="mailto:info@cars-ss.org" className="text-primary-foreground/70 hover:text-secondary transition-colors duration-300">
+                <a href="info@carsrelief.org" className="text-primary-foreground/70 hover:text-secondary transition-colors duration-300">
                   info@carsrelief.org
                 </a>
               </li>

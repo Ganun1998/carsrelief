@@ -162,7 +162,7 @@ export default function Index() {
   return (
     <Layout>
       {/* Hero Carousel Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-90 flex items-center overflow-hidden">
         {/* Background Images with Carousel */}
         <AnimatePresence mode="wait">
           <motion.div

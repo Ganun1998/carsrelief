@@ -13,15 +13,18 @@ import Nyak from '@/assets/leaders-img/Nyak.jpg';
 import Gach from '@/assets/leaders-img/Gach.jpg';
 import Gai from '@/assets/leaders-img/Gai.png';
 import mabeny from '@/assets/leaders-img/mabeny.png';
-import Daniel from '@/assets/leaders-img/Daniel.jpg';
+import Daniel from '@/assets/leaders-img/Daniel.png';
 import Dabuol from '@/assets/leaders-img/Dabuol.jpg';
-import Samuel from '@/assets/leaders-img/Samuel.png';
 import Susan from '@/assets/leaders-img/Susan.jpg';
 import dabuoln from '@/assets/leaders-img/dabuoln.png';
 import chot from '@/assets/leaders-img/chot.png';
 import jany from '@/assets/leaders-img/jany.jpg';
-import chieng from '@/assets/leaders-img/chieng.jpg';
+import chieng from '@/assets/leaders-img/chieng.png';
 import tarir from "@/assets/leaders-img/tarir.jpg";
+import reath from "@/assets/leaders-img/reath.jpg";
+import galam from "@/assets/leaders-img/galam.jpg";
+import hidita from "@/assets/leaders-img/hidita.jpg";
+import magai from "@/assets/leaders-img/magai.jpg";
 
 const leadership = [
   {
@@ -43,6 +46,7 @@ const leadership = [
     role: "Secretary",
     description:
       "Maintains official records, supports meetings, and ensures effective communication.",
+      image: galam,
   },
 
   {
@@ -57,6 +61,7 @@ const leadership = [
     role: "Technical Advisor",
     description:
       "Provides expert guidance to improve program quality and technical standards.",
+      image: reath,
   },
   {
     name: "Ganun Gattang Mayiel",
@@ -133,10 +138,16 @@ const boardMembers = [
 
 const fielCoodinators = [
   {
-    name: "Samuel Majier Loch",
+    name: "Magai Mawut Mayar",
     role: "Jonglei State Coordinator",
     description: "Coordinates activities and supports field teams across Jonglei State.",
-    image: Samuel,
+    image: magai,
+  },
+  {
+    name: "Hidata Raphael Esther",
+    role: "Eastern Equatoria State Coordinator",
+    description: "Coordinates activities and supports field teams across Jonglei State.",
+    image: hidita,
   },
   {
     name: "Tarir Agany Riek",
@@ -251,7 +262,7 @@ export default function Team() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="h-full w-full object-cover boarder-50 transition-transform duration-500 group-hover:scale-110"
+                    className="h-full w-full object-contain boarder-50 transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                   <div className="absolute bottom-4 left-4 right-4 flex gap-2 opacity-0 transition-opacity group-hover:opacity-100">
@@ -285,7 +296,7 @@ export default function Team() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {fielCoodinators.map((member) => (
               <div
                 key={member.name}
