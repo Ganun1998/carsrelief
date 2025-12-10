@@ -252,7 +252,7 @@ export default function Team() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5">
             {boardMembers.map((member) => (
               <div
                 key={member.name}
