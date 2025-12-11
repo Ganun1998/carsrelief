@@ -75,7 +75,7 @@ const programs = [
 const stats = [
   { value: 2000, suffix: "+", label: "Lives Impacted" },
   { value: 20, suffix: "+", label: "Dedicated Staff" },
-  { value: 6, suffix: "", label: "Active Programs" },
+  { value: 8, suffix: "", label: "Active Programs" },
 ];
 
 const values = [
