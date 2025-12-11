@@ -13,6 +13,8 @@ import Education from "./pages/programs/Education";
 import WASH from "./pages/programs/WASH";
 import Nutrition from "./pages/programs/Nutrition";
 import Health from "./pages/programs/Health";
+import PeaceBuilding from "./pages/programs/PeaceBuilding";
+import MentalHealth from "./pages/programs/MentalHealth";
 import Livelihoods from "./pages/programs/Livelihoods";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
@@ -38,6 +40,8 @@ const App = () => (
           <Route path="/programs/wash" element={<WASH />} />
           <Route path="/programs/nutrition" element={<Nutrition />} />
           <Route path="/programs/health" element={<Health />} />
+          <Route path="/programs/peace-building" element={<PeaceBuilding />} />
+          <Route path="/programs/mental-health" element={<MentalHealth />} />
           <Route path="/programs/livelihoods" element={<Livelihoods />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />

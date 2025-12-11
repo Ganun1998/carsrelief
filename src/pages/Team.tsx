@@ -146,7 +146,7 @@ const fielCoodinators = [
   {
     name: "Hidata Raphael Esther",
     role: "Eastern Equatoria State Coordinator",
-    description: "Coordinates activities and supports field teams across Jonglei State.",
+    description: "Coordinates activities and supports field teams across Eastern Equatoria State.",
     image: hidita,
   },
   {

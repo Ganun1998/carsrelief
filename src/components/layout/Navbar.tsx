@@ -14,6 +14,8 @@ const programs = [
   { name: "WASH", href: "/programs/wash" },
   { name: "Nutrition", href: "/programs/nutrition" },
   { name: "Health", href: "/programs/health" },
+  { name: "Peace Building", href: "/programs/peace-building" },
+  { name: "MHPSS", href: "/programs/mental-health" },
   { name: "Livelihoods", href: "/programs/livelihoods" },
 ];
 

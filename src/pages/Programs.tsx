@@ -12,6 +12,8 @@ import wash from '@/assets/wash.png';
 import nutrition from '@/assets/nutrition.png';
 import children1 from '@/assets/children1.jpg';
 import hero3 from '@/assets/hero3.jpg';
+import peace from '@/assets/peace.jpg';
+import mhpss from '@/assets/mhpss.jpg';
 
 const programs = [
   {
@@ -21,7 +23,6 @@ const programs = [
     image: protection,
     href: '/programs/child-protection',
     color: 'bg-trust',
-    /* stats: { beneficiaries: '5,000+', communities: '25+' }, */
   },
   {
     icon: BookOpen,
@@ -30,7 +31,6 @@ const programs = [
     image: education1,
     href: '/programs/education',
     color: 'bg-hope',
-    /*stats: { beneficiaries: '3,500+', schools: '15+' },*/
   },
   {
     icon: Droplets,
@@ -39,7 +39,6 @@ const programs = [
     image: wash,
     href: '/programs/wash',
     color: 'bg-trust',
-    /*stats: { beneficiaries: '8,000+', boreholes: '30+' },*/
   },
   {
     icon: Apple,
@@ -48,7 +47,6 @@ const programs = [
     image: nutrition,
     href: '/programs/nutrition',
     color: 'bg-hope',
-    /*stats: { beneficiaries: '4,000+', programs: '10+' },*/
   },
   {
     icon: Heart,
@@ -57,8 +55,24 @@ const programs = [
     image: children1,
     href: '/programs/health',
     color: 'bg-trust',
-    /*stats: { beneficiaries: '6,000+', clinics: '8+' },*/
   },
+  {
+    icon: Shield,
+    title: 'Peace Building',
+    description: 'Strengthening peaceful coexistence through dialogue, mediation, community reconciliation, and empowering youth and women as peace ambassadors.',
+    image: peace,
+    href: '/programs/peace-building',
+    color: 'bg-hope',
+  },
+  {
+    icon: Heart,
+    title: 'Mental Health & Psychosocial Support (MHPSS)',
+    description: 'Providing emotional healing, counseling, trauma support, safe spaces, and community-based psychosocial interventions for children and families.',
+    image: mhpss, 
+    href: '/programs/mental-health',
+    color: 'bg-trust',
+  },
+
   {
     icon: TrendingUp,
     title: 'Livelihoods',
@@ -66,9 +80,9 @@ const programs = [
     image: hero3,
     href: '/programs/livelihoods',
     color: 'bg-hope',
-    /*stats: { beneficiaries: '2,000+', groups: '50+' },*/
   },
 ];
+
 
 export default function Programs() {
 
