@@ -25,6 +25,7 @@ import reath from "@/assets/leaders-img/reath.jpg";
 import galam from "@/assets/leaders-img/galam.jpg";
 import hidita from "@/assets/leaders-img/hidita.jpg";
 import magai from "@/assets/leaders-img/magai.jpg";
+import wajia from "@/assets/leaders-img/wajia.jpg";
 
 const leadership = [
   {
@@ -108,6 +109,7 @@ const boardMembers = [
     name: "Wajia Gloria Santino",
     role: "Programs Coordinator",
     description: "Coordinates program activities and ensures timely delivery of outputs.",
+    image: wajia,
   },
   {
     name: "Chot Deng Both",
