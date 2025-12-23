@@ -114,7 +114,7 @@ export function Navbar() {
                 <span className="font-display font-bold text-xl text-trust">
                   CARS
                 </span>
-                <p className="text-md text-hope hidden sm:block">
+                <p className="text-md text-hope">
                   Children Affairs Relief Services
                 </p>
               </div>
