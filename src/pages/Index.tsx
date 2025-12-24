@@ -10,8 +10,9 @@ import CountUp from "react-countup";
 import hero2 from "@/assets/hero2.jpg";
 import hero4 from "@/assets/hero4.jpg";
 import hero3 from "@/assets/hero3.jpg";
+import team4 from "@/assets/team4.jpeg";
 import washImage from "@/assets/wash-program.jpg";
-import children1 from "@/assets/children1.jpg";
+import kids from "@/assets/kids.jpeg";
 import protection from "@/assets/protection.png";
 import wash from "@/assets/wash.png";
 import education1 from '@/assets/education1.jpg';
@@ -340,7 +341,7 @@ export default function Index() {
             <AnimatedSection animation="fade-left" className="relative">
               <div className="relative">
                 <img
-                  src={hero4}
+                  src={team4}
                   alt="CARS education program"
                   className="rounded-2xl shadow-strong w-full"
                 />
@@ -370,7 +371,7 @@ export default function Index() {
         {/* Fixed Background */}
         <div
           className="absolute inset-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: `url(${children1})` }}
+          style={{ backgroundImage: `url(${kids})` }}
         ></div>
 
         {/* Gradient Overlay */}

@@ -5,7 +5,7 @@ import { Target, Eye } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import about_hero from "@/assets/about_hero.jpg";
-import hero4 from "@/assets/hero4.jpg";
+import team4 from "@/assets/team4.jpeg";
 
 const objectives = [
   "Protect children from violence, abuse, neglect, and exploitation",
@@ -88,7 +88,7 @@ export default function About() {
 
             <AnimatedSection animation="fade-left">
               <img
-                src={hero4}
+                src={team4}
                 alt="CARS community work"
                 className="rounded-2xl shadow-strong w-full h-70"
               />
