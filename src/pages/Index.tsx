@@ -26,8 +26,10 @@ import unicef_logo from "@/assets/donors/unicef_logo.jpg";
 import fao_logo from "@/assets/donors/fao_logo.jpg";
 import nrc_logo from "@/assets/donors/nrc_logo.jpg";
 import wfp_logo from "@/assets/donors/wfp_logo.jpg";
-import unoca_logo from "@/assets/donors/unoca_logo.jpg";
 import shaci from "@/assets/donors/shaci.jpg";
+import zoa_logo from "@/assets/donors/zoa_logo.jpeg";
+import unops_logo from "@/assets/donors/unops_logo.jpeg";
+import ocha_logo from "@/assets/donors/ocha_logo.jpeg";
 
 const heroSlides = [
   {
@@ -152,8 +154,10 @@ const donorsAndPartners = [
   { logo: fao_logo },
   { logo: nrc_logo },
   { logo: wfp_logo },
-  { logo: unoca_logo },
   { logo: shaci },
+  { logo: zoa_logo },
+  { logo: unops_logo },
+  { logo: ocha_logo },
   // Add more donors/partners as needed
 ];
 

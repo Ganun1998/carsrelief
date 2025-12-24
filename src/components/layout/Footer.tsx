@@ -21,7 +21,7 @@ const programs = [
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-primary-foreground mt-20">
+    <footer className="bg-trust text-primary-foreground mt-20">
 
       {/* Main Footer */}
       <div className="container mx-auto px-4 lg:px-8 py-16">
