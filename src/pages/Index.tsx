@@ -21,6 +21,7 @@ import jonglei from "@/assets/statelogos/jonglei.png";
 import equatoria from "@/assets/statelogos/equatoria.jpg";
 import unity1 from "@/assets/statelogos/unity1.jpg";
 import uppernilestate from "@/assets/statelogos/uppernilestate.jpg";
+import pibor_logo from "@/assets/statelogos/pibor_logo.jpg";
 
 import unhcr_logo from "@/assets/donors/unhcr_logo.jpg";
 import unicef_logo from "@/assets/donors/unicef_logo.jpg";
@@ -106,6 +107,10 @@ const areasOfOperation = [
       { name: 'Duk County', logo: jonglei },
       { name: 'Bor South County', logo: jonglei },
       { name: 'Fangak County', logo: jonglei },
+      { name: 'Uror County', logo: jonglei },
+      { name: 'Nyirol County', logo: jonglei },
+      { name: 'Pigi County', logo: jonglei },
+      { name: 'Twic East County', logo: jonglei },
     ],
     mapUrl: 'https://www.google.com/maps/place/Jonglei,+South+Sudan',
   },
@@ -145,6 +150,16 @@ const areasOfOperation = [
       { name: 'Rubkona County', logo: unity1 },
     ],
     mapUrl: 'https://www.google.com/maps/place/Unity,+South+Sudan',
+  },
+
+  {
+    state: 'Pibor Administrative Area',
+    stateLogo: pibor_logo,
+    counties: [
+      { name: 'Pibor County', logo: pibor_logo },
+      { name: 'Pochalla County', logo: pibor_logo },
+    ],
+    mapUrl: 'https://www.bing.com/maps/search?FORM=KC2MAP&q=Greater+Pibor+Administrative+Area&ss=id.sid%3A0510d088-4c15-259b-ebb2-f7a89a27681e&cp=6.394451%7E33.835765&lvl=8&style=r',
   },
 ];
 
