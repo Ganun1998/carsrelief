@@ -153,7 +153,7 @@ const areasOfOperation = [
   },
 
   {
-    state: 'Pibor Administrative Area',
+    state: 'Greater Pibor Administrative Area',
     stateLogo: pibor_logo,
     counties: [
       { name: 'Pibor County', logo: pibor_logo },
