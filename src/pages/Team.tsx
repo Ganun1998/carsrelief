@@ -5,7 +5,7 @@ import { Mail, Facebook, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Layout } from '@/components/layout/Layout';
 import { AnimatedSection } from '@/components/AnimatedSection';
-import about_hero from '@/assets/about_hero.jpg';
+import leaders from '@/assets/leaders.jpeg';
 import bol from '@/assets/leaders-img/bol.jpg';
 import nhial from '@/assets/leaders-img/nhial.jpg';
 import ganun1 from '@/assets/leaders-img/ganun1.jpg';
@@ -177,7 +177,7 @@ export default function Team() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[50vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={about_hero} alt="Our Team" className="w-full h-full object-cover" />
+          <img src={leaders} alt="Our Team" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/50" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8">

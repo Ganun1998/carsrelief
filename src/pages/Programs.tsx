@@ -18,16 +18,16 @@ import mhpss from '@/assets/mhpss.jpg';
 const programs = [
   {
     icon: Shield,
-    title: 'Child Protection',
-    description: 'Comprehensive protection services ensuring the safety, well-being, and rights of vulnerable children through case management, psychosocial support, and community-based protection mechanisms.',
+    title: 'Child Protection, GBV, PSEA, and Women Empowerment ',
+    description: 'This program focuses on safeguarding children and empowering women by addressing GenderBased Violence (GBV) and Prevention of Sexual Exploitation and Abuse (PSEA). It offers comprehensive psychosocial support, including counseling and emotional healing. ',
     image: protection,
     href: '/programs/child-protection',
     color: 'bg-trust',
   },
   {
     icon: BookOpen,
-    title: 'Education',
-    description: 'Quality education programs that provide access to learning, teacher training, school rehabilitation, and educational materials for out-of-school children and youth.',
+    title: 'Education (Early childhood Development, Primary Education, and Special Needs Education) Peacebuilding and Social Cohesion ',
+    description: ' Focused on quality education, this program offers early childhood, primary, and special needs education. It includes teacher training, school rehabilitation, and educational materials, promoting inclusivity and peacebuilding within communities. ',
     image: education1,
     href: '/programs/education',
     color: 'bg-hope',
@@ -42,20 +42,13 @@ const programs = [
   },
   {
     icon: Apple,
-    title: 'Nutrition',
-    description: 'Nutrition screening, supplementary feeding, agricultural support, and food assistance programs addressing malnutrition and food insecurity.',
+    title: 'Health and Nutrition',
+    description: 'This initiative addresses malnutrition and food insecurity through nutrition screening, supplementary feeding, and agricultural support. It aims to enhance overall health and empower families to thrive. ',
     image: nutrition,
     href: '/programs/nutrition',
     color: 'bg-hope',
   },
-  {
-    icon: Heart,
-    title: 'Health',
-    description: 'Primary healthcare services, maternal and child health programs, disease prevention, and health education to improve community health outcomes.',
-    image: children1,
-    href: '/programs/health',
-    color: 'bg-trust',
-  },
+
   {
     icon: Shield,
     title: 'Peace Building',
@@ -77,8 +70,17 @@ const programs = [
     icon: TrendingUp,
     title: 'Livelihoods',
     description: 'Vocational training, small business support, savings groups, and income-generating activities that build economic resilience and self-reliance.',
-    image: hero3,
+    image: children1,
     href: '/programs/livelihoods',
+    color: 'bg-hope',
+  },
+
+   {
+    icon: TrendingUp,
+    title: 'Non-Food Item (NFIs) ',
+    description: 'Distribution of non-food items such as blankets, clothing, and household items to support families in need.',
+    image: hero3,
+    href: '/programs/nfis',
     color: 'bg-hope',
   },
 ];

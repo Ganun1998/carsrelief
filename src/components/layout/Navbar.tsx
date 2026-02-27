@@ -24,6 +24,7 @@ const aboutPages = [
   { name: "Core Values", href: "/core-values" },
   { name: "Organization Structure", href: "/organization-structure" },
   { name: "Leadership", href: "/team" },
+  { name: "Partners", href: "/partners" },
 ];
 
 const navLinks = [
@@ -40,6 +41,7 @@ const navLinks = [
     hasDropdown: true,
     dropdownType: "programs",
   },
+  {name: "Events", href: "/events" },
   { name: "Contact", href: "/contact" },
 ];
 

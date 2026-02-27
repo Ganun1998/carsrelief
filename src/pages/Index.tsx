@@ -1,27 +1,25 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Users, BookOpen, Droplets, Shield, ArrowRight, CheckCircle, ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import { Users, BookOpen, Droplets, Shield, ArrowRight, CheckCircle, ChevronLeft, ChevronRight, } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import CountUp from "react-countup";
 
-import hero2 from "@/assets/hero2.jpg";
+import team1 from "@/assets/team1.jpeg";
 import hero4 from "@/assets/hero4.jpg";
-import hero3 from "@/assets/hero3.jpg";
+import palabek1 from "@/assets/palabek1.jpeg";
 import team4 from "@/assets/team4.jpeg";
 import washImage from "@/assets/wash-program.jpg";
 import kids from "@/assets/kids.jpeg";
 import protection from "@/assets/protection.png";
 import wash from "@/assets/wash.png";
 import education1 from '@/assets/education1.jpg';
-
-import jonglei from "@/assets/statelogos/jonglei.png";
-import equatoria from "@/assets/statelogos/equatoria.jpg";
-import unity1 from "@/assets/statelogos/unity1.jpg";
-import uppernilestate from "@/assets/statelogos/uppernilestate.jpg";
-import pibor_logo from "@/assets/statelogos/pibor_logo.jpg";
+import bor from "@/assets/bor.jpeg";
+import gambella from "@/assets/gambella.jpeg";
+import palebek from "@/assets/palebek.jpeg";
+import kakuma from "@/assets/kakuma.jpeg";
 
 import unhcr_logo from "@/assets/donors/unhcr_logo.jpg";
 import unicef_logo from "@/assets/donors/unicef_logo.jpg";
@@ -35,7 +33,7 @@ import ocha_logo from "@/assets/donors/ocha_logo.jpeg";
 
 const heroSlides = [
   {
-    image: hero2,
+    image: team1,
     badge: "Protection for every child",
     title: "Transforming Lives Through",
     highlight: ["Protection", "Empowerment", "Relief"],
@@ -43,11 +41,12 @@ const heroSlides = [
   {
     image: hero4,
     badge: "Education for Every Child",
+
     title: "Building Futures Through",
     highlight: ["Education", "Knowledge", "Skills"],
   },
   {
-    image: hero3,
+    image: palabek1,
     badge: "Clean Water, Healthy Lives",
     title: "Creating Change Through",
     highlight: ["Community", "Health", "Hope"],
@@ -57,27 +56,27 @@ const heroSlides = [
 const programs = [
   {
     icon: Shield,
-    title: "Child Protection",
+    title: "Child Protection, Women Empowerment and GBV/PSEA Prevention",
     description:
-      "Ensuring safety and well-being of vulnerable children through comprehensive protection programs.",
+      " This program focuses on safeguarding children and empowering women by addressing Gender Based Violence (GBV) and Prevention of Sexual Exploitation and Abuse (PSEA). It offers comprehensive psychosocial support, including counseling and emotional healing. ",
     image: protection,
     href: "/programs/child-protection",
     color: "bg-trust",
   },
   {
     icon: BookOpen,
-    title: "Education",
+    title: "Education, Peacebuilding and Social Cohesion ",
     description:
-      "Providing quality education and learning opportunities to empower the next generation.",
+      "Focused on quality education, this program offers early childhood, primary, and special needs education. It includes teacher training, school rehabilitation, and educational materials, promoting inclusivity and peacebuilding within communities.  ",
     image: education1,
     href: "/programs/education",
     color: "bg-hope",
   },
   {
     icon: Droplets,
-    title: "WASH",
+    title: "WASH (Water, Sanitation, and Hygiene)",
     description:
-      "Clean water, sanitation, and hygiene programs for healthier communities.",
+      "Implementation of integrated Water, Sanitation, and Hygiene interventions including borehole construction, latrine building, hygiene promotion, and community water management training. These activities aim to improve access to safe and reliable water sources, reduce waterborne diseases, and strengthen community capacity to maintain WASH infrastructure.",
     image: wash,
     href: "/programs/wash",
     color: "bg-trust",
@@ -97,71 +96,6 @@ const values = [
   "Partnership and collaboration",
 ];
 
-const areasOfOperation = [
-  {
-    state: 'Jonglei State',
-    stateLogo: jonglei, // STATE LOGO
-    counties: [
-      { name: 'Ayod County', logo: jonglei },
-      { name: 'Akobo County', logo: jonglei },
-      { name: 'Duk County', logo: jonglei },
-      { name: 'Bor South County', logo: jonglei },
-      { name: 'Fangak County', logo: jonglei },
-      { name: 'Uror County', logo: jonglei },
-      { name: 'Nyirol County', logo: jonglei },
-      { name: 'Pigi County', logo: jonglei },
-      { name: 'Twic East County', logo: jonglei },
-    ],
-    mapUrl: 'https://www.google.com/maps/place/Jonglei,+South+Sudan',
-  },
-
-  {
-    state: 'Upper Nile State',
-    stateLogo: uppernilestate,
-    counties: [
-      { name: 'Maiwut County', logo: uppernilestate }, // example, replace with real
-      { name: 'Ulang County', logo: uppernilestate },
-      { name: 'Renk County', logo: uppernilestate },
-      { name: 'Makal County', logo: uppernilestate },
-    ],
-    mapUrl: 'https://www.google.com/maps/place/Upper+Nile,+South+Sudan',
-  },
-
-  {
-    state: 'Eastern Equatoria State',
-    stateLogo: equatoria,
-    counties: [
-      { name: 'Kapoeta East County', logo: equatoria },
-      { name: 'Kapoeta North County', logo: equatoria },
-      { name: 'Kapoeta South County', logo: equatoria },
-      { name: 'Torit County', logo: equatoria },
-    ],
-    mapUrl:
-      'https://www.google.com/maps/place/Eastern+Equatoria,+South+Sudan',
-  },
-
-  {
-    state: 'Unity State',
-    stateLogo: unity1,
-    counties: [
-      { name: 'Guit County', logo: unity1 },
-      { name: 'Mayom County', logo: unity1 },
-      { name: 'Leer County', logo: unity1 },
-      { name: 'Rubkona County', logo: unity1 },
-    ],
-    mapUrl: 'https://www.google.com/maps/place/Unity,+South+Sudan',
-  },
-
-  {
-    state: 'Greater Pibor Administrative Area',
-    stateLogo: pibor_logo,
-    counties: [
-      { name: 'Pibor County', logo: pibor_logo },
-      { name: 'Pochalla County', logo: pibor_logo },
-    ],
-    mapUrl: 'https://www.bing.com/maps/search?FORM=KC2MAP&q=Greater+Pibor+Administrative+Area&ss=id.sid%3A0510d088-4c15-259b-ebb2-f7a89a27681e&cp=6.394451%7E33.835765&lvl=8&style=r',
-  },
-];
 
 // Add this data at the top with other constants
 const donorsAndPartners = [
@@ -180,7 +114,6 @@ const donorsAndPartners = [
 
 export default function Index() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [expandedState, setExpandedState] = useState<string | null>(null);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -321,14 +254,9 @@ export default function Index() {
                 Building a Brighter Future for{" "}
                 <span className="text-trust">Every Child</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Children Affairs Relief Services (CARS) is a national,
-                non-governmental, non-profit humanitarian and developmental
-                organization registered with the South Sudan Relief and
-                Rehabilitation Commission (RRC). Founded on 21-May-2024 CARS is
-                driven by a deep passion to protect, empower, and transform the
-                lives of vulnerable children, women, and men affected by
-                conflict, displacement, and natural disasters.
+              <p className="text-black text-lg leading-relaxed mb-8">
+                Children Affairs Relief Services (CARS) is a youth-led non-profit humanitarian and developmental organization dedicated to protecting,
+                 empowering, and transforming the lives of vulnerable children, women, and men affected by conflict, displacement, and natural disasters.
               </p>
               <div className="space-y-4 mb-8">
                 {values.map((value, index) => (
@@ -486,122 +414,129 @@ export default function Index() {
           </AnimatedSection>
         </div>
       </section>
-  
-
-       {/* Areas of Operations Section */}
-<section className="py-20 lg:py-32 bg-trust">
+       
+       {/* Events Section */}
+<section className="py-10 lg:py-32">
   <div className="container mx-auto px-4 lg:px-8">
-    <AnimatedSection
-      animation="fade-up"
-      className="text-center max-w-3xl mx-auto mb-16"
-    >
-      <h2 className="font-display text-3xl md:text-4xl lg:text-4xl font-bold text-muted mb-6">
-        Where We Work
+
+    {/* Section Header */}
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
+        Recent Food Distribution Events
       </h2>
-
-      <p className="text-white text-lg">
-        We operate across multiple states in South Sudan, reaching vulnerable
-        communities with life-changing programs.
+      <p className="text-muted-foreground text-lg leading-relaxed">
+        Through our emergency response and community support initiatives,
+        we continue to reach vulnerable families across refugee camps and
+        conflict-affected communities.
       </p>
-    </AnimatedSection>
+    </div>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
-      {areasOfOperation.map((area, index) => (
-        <AnimatedSection
-          key={area.state}
-          animation="fade-up"
-          delay={index * 0.1}
-        >
-          <div className="bg-card rounded-2xl shadow-soft overflow-hidden">
-            {/* STATE BUTTON */}
-            <button
-              onClick={() =>
-                setExpandedState(
-                  expandedState === area.state ? null : area.state
-                )
-              }
-              className="w-full p-10 flex items-center justify-between text-left hover:bg-muted/50 transition-colors duration-300"
-            >
-              <div className="flex items-center gap-3">
-                {/* STATE IMAGE LOGO */}
-                <a
-                  href={area.mapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="w-10 h-10 rounded-xl overflow-hidden bg-gradient-trust flex items-center justify-center hover:scale-110 transition-transform duration-200"
-                  title={`View ${area.state} on map`}
-                >
-                  <img
-                    src={area.stateLogo}
-                    alt={`${area.state} Logo`}
-                    className="w-12 h-12 object-contain"
-                  />
-                </a>
+    {/* Events Grid */}
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <h3 className="font-display text-lg font-bold text-foreground">
-                  {area.state}
-                </h3>
-              </div>
+      {/* Kakuma */}
+      <div className="bg-background shadow-sm border-2 overflow-hidden hover:shadow-md transition-shadow">
+        <img
+          src={kakuma}
+          alt="Food Distribution in Kakuma Refugee Camp"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-5">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            In <span className="font-semibold text-foreground">Kakuma Refugee Camp, Kenya</span>,
+            <span className="font-semibold text-primary"> 128 individuals</span> received
+            essential food assistance, helping families meet their immediate
+            nutritional needs.
+          </p>
+        </div>
+      </div>
 
-              <ChevronDown
-                className={`w-5 h-5 text-muted-foreground transition-transform duration-300 ${
-                  expandedState === area.state ? "rotate-180" : ""
-                }`}
-              />
-            </button>
+      {/* Bor POC */}
+      <div className="bg-background border-2 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+        <img
+          src={bor}
+          alt="Food Distribution in Bor POC"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-5">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            In <span className="font-semibold text-foreground">POC Bor, Jonglei State, South Sudan</span>,
+            <span className="font-semibold text-primary"> 95 individuals</span> benefited
+            from food distribution, supporting displaced families facing
+            critical shortages.
+          </p>
+        </div>
+      </div>
 
-            {/* COUNTY LIST */}
-            <div
-              className={`overflow-hidden transition-all duration-300 ${
-                expandedState === area.state ? "max-h-96" : "max-h-0"
-              }`}
-            >
-              <div className="px-6 pb-6">
-                <ul className="space-y-2">
-                  {area.counties.map((county) => (
-                    <li
-                      key={county.name}
-                      className="flex items-center justify-between text-muted-foreground"
-                    >
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-hope rounded-full" />
-                        {county.name}
-                      </div>
+      {/* Kule */}
+      <div className="bg-background border-2 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+        <img
+          src={gambella}
+          alt="Food Distribution in Kule Refugee Camp"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-5">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            In <span className="font-semibold text-foreground">Kule Refugee Camp, Gambella, Ethiopia</span>,
+            <span className="font-semibold text-primary"> 165 individuals</span> received
+            food assistance, strengthening resilience among refugee households.
+          </p>
+        </div>
+      </div>
 
-                      {/* COUNTY ICON */}
-                      <img
-                        src={county.logo}
-                        alt={`${county.name} Logo`}
-                        className="w-6 h-6 object-contain opacity-90"
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
-      ))}
+      {/* Palebek */}
+      <div className="bg-background border-2 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+        <img
+          src={palebek}
+          alt="Food Distribution in Palebek Refugee Camp"
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-5">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            In <span className="font-semibold text-foreground">Palebek Refugee Camp, Uganda</span>,
+            <span className="font-semibold text-primary"> 178 individuals</span> benefited
+            from food distribution, ensuring vulnerable families had access
+            to basic sustenance.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 
 {/* partners and donors */}
-<section className="py-20 lg:py-22">
+<section className="py-20 lg:py-22 overflow-hidden">
   <div className="container mx-auto px-4 lg:px-8">
-    <AnimatedSection animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
+    <AnimatedSection
+      animation="fade-up"
+      className="text-center max-w-3xl mx-auto mb-16"
+    >
       <h2 className="font-display text-3xl md:text-4xl lg:text-4xl font-bold text-foreground mb-6">
         Our Donors and Partners
       </h2>
     </AnimatedSection>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"> {/* Reduced gap */}
-      {donorsAndPartners.map((donor, index) => (
-        <div key={index} className="flex flex-col items-center">
-          <img src={donor.logo} className="w-auto h-40 md:h-50 object-contain" /> {/* Increased size */}
-        </div>
-      ))}
+
+    {/* Scrolling Wrapper */}
+    <div className="relative w-full overflow-hidden">
+      <div className="flex animate-scroll gap-8 w-max">
+        
+        {/* Duplicate array for seamless infinite scroll */}
+        {[...donorsAndPartners, ...donorsAndPartners].map((donor, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center min-w-[180px]"
+          >
+            <img
+              src={donor.logo}
+              alt="Partner Logo"
+              className="h-24 w-auto object-contain hover:grayscale-0 transition duration-300"
+            />
+          </div>
+        ))}
+
+      </div>
     </div>
   </div>
 </section>

@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Layout } from '@/components/layout/Layout';
 import { AnimatedSection } from '@/components/AnimatedSection';
 import about_hero from "@/assets/about_hero.jpg";
+import workflow from "@/assets/workflow.png";
 
 const governanceStructure = [
   {
@@ -52,7 +53,11 @@ export default function OrganizationStructure() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 min-h-[50vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={about_hero} alt="Organization Structure" className="w-full h-full object-cover" />
+          <img
+            src={about_hero}
+            alt="Organization Structure"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/70 to-foreground/50" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8">
@@ -66,8 +71,9 @@ export default function OrganizationStructure() {
               Organization Structure
             </h1>
             <p className="text-xl text-primary-foreground/80 leading-relaxed">
-              A well-organized structure enables us to deliver effective humanitarian 
-              assistance and achieve our mission of transforming lives.
+              A well-organized structure enables us to deliver effective
+              humanitarian assistance and achieve our mission of transforming
+              lives.
             </p>
           </motion.div>
         </div>
@@ -76,13 +82,17 @@ export default function OrganizationStructure() {
       {/* Governance Structure */}
       <section className="py-20 lg:py-32 bg-gradient-warm">
         <div className="container mx-auto px-4 lg:px-8">
-          <AnimatedSection animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
+          <AnimatedSection
+            animation="fade-up"
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
               Our Governance Structure
             </h2>
             <p className="text-muted-foreground text-lg">
-              CARS follow a structured and transparent hierarchy designed to ensure efficient program 
-               Implementation, accountability, and sustainability.
+              CARS follow a structured and transparent hierarchy designed to
+              ensure efficient program Implementation, accountability, and
+              sustainability.
             </p>
           </AnimatedSection>
 
@@ -100,7 +110,9 @@ export default function OrganizationStructure() {
                     </h3>
                   </div>
                   <div className="p-6 lg:p-8">
-                    <p className="text-muted-foreground mb-6">{level.description}</p>
+                    <p className="text-muted-foreground mb-6">
+                      {level.description}
+                    </p>
                     <div className="flex flex-wrap gap-3">
                       {level.members.map((member) => (
                         <span
@@ -121,65 +133,27 @@ export default function OrganizationStructure() {
 
       {/* Organizational Structure */}
       <section className="py-20 lg:py-25">
-        <div className="container mx-auto px-4 lg:px-8">
-          <AnimatedSection animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
+        <div className="container items-center justify-center mx-auto px-4 lg:px-8">
+          <AnimatedSection
+            animation="fade-up"
+            className="text-center max-w-3xl mx-auto mb-16"
+          >
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
               CARS'S Workflow
             </h2>
           </AnimatedSection>
 
-          <AnimatedSection animation="scale" className="max-w-4xl mx-auto">
-            <div className="bg-card p-8 lg:p-12 rounded-2xl shadow-strong">
-              <div className="space-y-8">
-                <div className="text-center">
-                  <div className="inline-block px-6 py-3 bg-trust text-primary-foreground rounded-xl font-semibold">
-                    Board of Directors
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="w-px h-8 bg-border" />
-                </div>
-                <div className="text-center">
-                  <div className="inline-block px-6 py-3 bg-hope text-foreground rounded-xl font-semibold">
-                    Executive Director
-                  </div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="w-px h-8 bg-border" />
-                </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {['Programs', 'HR', 'Admin & Finance', 'Logistics','M&E','Partnerships & Meal'].map((dept) => (
-                    <div key={dept} className="px-4 py-3 bg-muted rounded-lg text-center font-medium text-foreground">
-                      {dept}
-                    </div>
-                  ))}
-                </div>
-                <div className="flex justify-center">
-                  <div className="w-px h-8 bg-border" />
-                </div>
-                <div className="text-center">
-                  <div className="inline-block px-6 py-3 bg-growth/20 text-growth rounded-xl font-semibold">
-                    Field Teams & Community Partners
-                  </div>
-                </div>
+          <AnimatedSection animation="scale" className="max-w-2xl mx-auto ">
+            <div className="p-6 lg:p-10 rounded-2xl">
+              {/* Organogram Image */}
+              <div className="flex justify-center">
+                <img
+                  src={workflow}
+                  alt="Wan Education Foundation Organizational Structure"
+                  className="w-full max-w-5xl h-65 rounded-xl shadow-md object-contain"
+                />
               </div>
             </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
-
-      {/* CTA */}
-      <section className="py-20 bg-gradient-trust">
-        <div className="container mx-auto px-4 lg:px-8">
-          <AnimatedSection animation="fade-up" className="text-center max-w-3xl mx-auto">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-              Meet Our Team
-            </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8">
-              Get to know the dedicated individuals who lead our organization and 
-              drive our mission forward.
-            </p>
             <Link to="/team">
               <Button variant="hope" size="lg" className="gap-2">
                 View Our Team
