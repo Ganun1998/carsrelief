@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram, MessageCircle } from 'lucide-react';
 import { AnimatedSection } from '@/components/AnimatedSection';
 import logo from "@/assets/logo.jpg";
 
@@ -53,7 +53,7 @@ export function Footer() {
             </p>
 
             <div className="flex gap-3">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (
+              {[Facebook, MessageCircle, Linkedin, Instagram].map((Icon, index) => (
                 <a
                   key={index}
                   href="#"

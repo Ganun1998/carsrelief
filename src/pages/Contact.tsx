@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Clock, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Clock, Facebook, Linkedin, Instagram, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedSection } from "@/components/AnimatedSection";
@@ -142,18 +142,20 @@ export default function Contact() {
 
                 <div className="flex gap-4 flex-wrap">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/61576192844517/posts/122179819904873094/?app=fbl"
                     className="p-3 bg-muted rounded-lg hover:bg-trust transition-all duration-300"
                   >
                     <Facebook className="w-6 h-6 text-trust hover:text-primary-foreground" />
                   </a>
 
                   <a
-                    href="#"
-                    className="p-3 bg-muted rounded-lg hover:bg-trust transition-all duration-300"
-                  >
-                    <Twitter className="w-6 h-6 text-black hover:text-primary-foreground" />
-                  </a>
+                      href="https://wa.me/+211917774444"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-muted rounded-lg hover:bg-trust transition-all duration-300"
+                    >
+                      <MessageCircle className="h-5 w-5 text-[#25D366] hover:text-[#25D366]" />
+                    </a>
 
                   <a
                     href="#"

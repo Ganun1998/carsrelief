@@ -1,4 +1,4 @@
-import { Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, Facebook, Linkedin, Instagram, MessageCircle } from 'lucide-react';
 
 export function TopContactBar() {
   return (
@@ -28,7 +28,7 @@ export function TopContactBar() {
             <span className="hidden md:inline text-primary-foreground/80">Follow us:</span>
             <div className="flex items-center gap-2">
               <a 
-                href="https://facebook.com/carssouthsudan" 
+                href="https://www.facebook.com/61576192844517/posts/122179819904873094/?app=fbl" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-7 h-7 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-foreground transition-all duration-200"
@@ -36,12 +36,12 @@ export function TopContactBar() {
                 <Facebook className="w-3.5 h-3.5" />
               </a>
               <a 
-                href="https://twitter.com/carssouthsudan" 
+                href="https://wa.me/+211917774444" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-7 h-7 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-foreground transition-all duration-200"
               >
-                <Twitter className="w-3.5 h-3.5" />
+                <MessageCircle className="w-3.5 h-3.5" />
               </a>
               <a 
                 href="https://linkedin.com/company/carssouthsudan" 
