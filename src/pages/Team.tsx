@@ -26,6 +26,7 @@ import galam from "@/assets/leaders-img/galam.jpg";
 import hidita from "@/assets/leaders-img/hidita.jpg";
 import magai from "@/assets/leaders-img/magai.jpg";
 import wajia from "@/assets/leaders-img/wajia.jpg";
+import logo from "@/assets/logo.jpg";
 
 const leadership = [
   {
@@ -43,30 +44,30 @@ const leadership = [
     image: nhial,
   },
   {
-    name: "Galam John Biel",
-    role: "Secretary",
+    name: "Chuol Machar Deng",
+    role: "Program & Strategic Advisor",
     description:
-      "Maintains official records, supports meetings, and ensures effective communication.",
-      image: galam,
+       "Provides strategic guidance on program planning and ensures alignment with organizational goals and impact priorities.",
+      image: logo,
   },
 
   {
-    name: "Nyak Tap Toang",
+    name: "Manyang Reath Kher",
     role: "Treasurer",
     description:
       "Oversees financial integrity, budgeting, and proper resource utilization.",
-    image: Nyak,
+    image: logo,
   },
   {
-    name: "Reath Chuol",
-    role: "Technical Advisor",
-    description:
-      "Provides expert guidance to improve program quality and technical standards.",
-      image: reath,
-  },
+   name: "Giel Piny Malual",
+  role: "Fundraising & Partnerships Director",
+  description:
+    "Leads resource mobilization efforts, builds strategic partnerships with donors and organizations, and supports sustainable funding initiatives to strengthen and expand program impact.",
+  image: logo,
+},
   {
     name: "Ganun Gattang Mayiel",
-    role: "Technical Assistant",
+    role: "Technical Advisor",
     description:
       "Supports program teams with technical tasks, data collection, and field coordination.",
     image: ganun1,
