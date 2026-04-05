@@ -30,14 +30,14 @@ import wajia from "@/assets/leaders-img/wajia.jpg";
 const leadership = [
   {
     name: "Bol Geah Puoch",
-    role: "Co-founder & Chairperson",
+    role: "President & CEO",
     description:
       "Provides overall leadership and guides the organization’s strategic direction.",
     image: bol,
   },
   {
     name: "Nhial Chuol Tut",
-    role: "Co-founder & Senior Advisor",
+    role: "Vice President & Senior Advisor",
     description:
       "Offers strategic advice to ensure mission alignment and organizational effectiveness.",
     image: nhial,
